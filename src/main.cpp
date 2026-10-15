@@ -3,20 +3,15 @@
 // Nathan Rasbold
 // MAKR -- RGB Interface
 
-// Potentiometer inputs
 const uint8_t POT_RED = A6;
 const uint8_t POT_GREEN = A3;
 const uint8_t POT_BLUE = A0;
-
-// Individual LEDs show each potentiometer's color level.
-const uint8_t RED_LED_PIN = 8;
+const uint8_t RED_LED_PIN = 9;
 const uint8_t GREEN_LED_PIN = 10;
-const uint8_t BLUE_LED_PIN = 12;
-
-// The RGB LED combines the same three color levels.
-const uint8_t RGB_RED_PIN = 2;
-const uint8_t RGB_GREEN_PIN = 3;
-const uint8_t RGB_BLUE_PIN = 4;
+const uint8_t BLUE_LED_PIN = 11;
+const uint8_t RGB_RED_PIN = 6;
+const uint8_t RGB_GREEN_PIN = 5;
+const uint8_t RGB_BLUE_PIN = 3;
 
 uint8_t readBrightness(uint8_t analogPin) {
   int rawValue = analogRead(analogPin);
